@@ -71,13 +71,8 @@ formulario.addEventListener("submit", function(event) {
     if (input_contraseña.value.trim() === "" || input_contraseña.value.trim().length < 6) {
         esValido = false;
     }
-    
     if (!esValido) {
-        event.preventDefault(); // Prevenir el envío del formulario
+        event.preventDefault();
         alert("Por favor, complete correctamente todos los campos.");
-    } else {
-        // Si es válido, redirigir a la nueva página
-        event.preventDefault(); // Prevenir el envío del formulario para poder redirigir
-        window.location.href = "DOM/tareasInteractivas/tareasLista.html";
     }
 });

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Principal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block; /* Hace que el enlace se comporte como un bloque */
+            text-decoration: none;
+            padding: 15px 30px; /* Aumenta el padding para un botón más grande */
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            font-size: 16px; /* Aumenta el tamaño de la fuente */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade sombra para un efecto de profundidad */
+        }
+
+        a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                height: auto;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            a {
+                padding: 10px 20px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+                font-size: 14px; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a mi página</h1>
+    <ul>
+        <li><a href="busquedaEnTablas/busqueda.html">Buscar en Tablas</a></li>
+        <li><a href="InicioSesion/inicioSesi.html">Iniciar Sesión</a></li>
+        <li><a href="tareasInteractivas/tareasLista.html">Tareas Interactivas</a></li>
+    </ul>
+</body>
+</html>
