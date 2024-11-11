@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda en Tabla</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="funciones.js"></script>
+
+    <h1>Búsqueda en Tabla</h1>
+    <input type="text" id="terminoBusqueda" placeholder="Ingrese término de búsqueda">
+    <button onclick="funcionBuscar()">Buscar</button>
+    <div id="resultado"></div>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Término</th>
+                <th>Definición</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Lenguaje de marcado para crear páginas web.</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Lenguaje de estilo para describir la presentación de un documento HTML.</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Lenguaje de programación que permite implementar funcionalidades complejas en páginas web.</td>
+            </tr>
+            <tr>
+                <td>DOM</td>
+                <td>Modelo de objetos del documento, representa la estructura de un documento HTML.</td>
+            </tr>
+            <tr>
+                <td>API</td>
+                <td>Interfaz de programación de aplicaciones, permite la interacción entre diferentes programas.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
